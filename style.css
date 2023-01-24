@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(44, 62, 80);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-btn {
+  position: absolute;
+  width: 41px;
+  height: 23px;
+  bottom: 33px;
+  left: 33px;
+  cursor: pointer;
+}
+
+form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(31, 44, 55);
+  color: white;
+  width: 100%;
+  height: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+form.hide {
+  transform: translateY(-100%);
+}
+
+.difficulty {
+  width: 190px;
+  margin-left: 19px;
+  background-color: rgb(167, 197, 227);
+  outline: none;
+  padding: 6px;
+}
+
+.container {
+  background-color: rgb(52, 73, 94);
+  color: white;
+  width: 500px;
+  padding: 11px;
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0 0 11px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game {
+  text-align: center;
+}
+
+.game input {
+  padding: 11px;
+  font-size: 1.1em;
+  margin: 6px 0px;
+  width: 333px;
+}
+
+.gameover h1,
+.gameover p {
+  text-align: center;
+  margin: 33px 0px;
+}
